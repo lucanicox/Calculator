@@ -43,33 +43,33 @@ void Backtomenu()
     system("pause");
 }
 
-void Add(float n1, float n2)
+void Add(long long n1, long long n2)
 {
-    float c;
+    long long c;
     c = n1+n2;
     cout << "The result is: " << c << endl;
     Backtomenu();
 }
 
-void Substract(float n1, float n2)
+void Substract(long long n1, long long n2)
 {
-    float c;
+    long long c;
     c = n1-n2;
     cout << "The result is: " << c << endl;
     Backtomenu();
 }
 
-void Multiply(float n1, float n2)
+void Multiply(long long n1, long long n2)
 {
-    float c;
+    long long c;
     c = n1*n2;
     cout << "The result is: " << c << endl;
     Backtomenu();
 }
 
-void Divide(float n1, float n2)
+void Divide(long long n1, long long n2)
 {
-    float c;
+    long long c;
     if (n1>=n2 && n2!=0)
     {
         c = n1/n2;
@@ -79,7 +79,7 @@ void Divide(float n1, float n2)
     Backtomenu();
 }
 
-void Factorial(long n1)
+void Factorial(long long n1)
 {
     for (int i = n1 - 1; i > 1; i--)
     {
@@ -89,9 +89,9 @@ void Factorial(long n1)
     Backtomenu();
 }
 
-void Squareroot(int n1)
+void Squareroot(long long n1)
 {
-    int result =sqrt(n1);
+    long long result =sqrt(n1);
     cout << "The result is: " << result << endl;
     Backtomenu();
 }
@@ -123,7 +123,7 @@ int main()
 {
     introart();
     int l;
-    float a,b;
+    long long a,b;
     do
     {
         Menu();
@@ -164,3 +164,4 @@ int main()
     while (l>0 && l<7);
     return 0;
 }
+
